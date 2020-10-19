@@ -137,7 +137,6 @@
     transition: 250ms; } }
 
 .backgroundImg-welcome {
-  background-image: url('./Imgs/1.png');
   background-position: left;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -214,7 +213,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./Imgs/OPCION2.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px; }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }

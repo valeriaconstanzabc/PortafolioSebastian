@@ -1,9 +1,10 @@
 import React from 'react'
+import AboutMe from '../Components/AboutMe'
 // import NavBar from '../componets/NavBar'
 
 const Welcome = () => {
     return (
-        <div className="backgroundImg-welcome">
+        <>
             <div className="container-welcome">
                 <div className="containerName-welcome">
                     <div className="nameAndLastname">
@@ -20,7 +21,8 @@ const Welcome = () => {
                     </p>
                 </div>
             </div>
-        </div>
+            <AboutMe />
+        </>
     )
 }
 

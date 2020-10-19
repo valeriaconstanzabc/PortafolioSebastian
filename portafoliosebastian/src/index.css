@@ -136,6 +136,63 @@
     color: #1888ff;
     transition: 250ms; } }
 
+.aboutMe-container {
+  display: flex;
+  flex-direction: column;
+  margin: 220px 120px 0px 120px;
+  box-sizing: border-box; }
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: #426000;
+  margin-bottom: 100px; }
+
+.aboutMe-tittle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px; }
+
+.aboutMe-tittle-container h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  letter-spacing: 6.33143px; }
+
+.aboutMe-tittle-container p {
+  display: flex;
+  justify-content: center; }
+
+.aboutMe-iconsAttributes-container {
+  display: flex;
+  justify-content: space-between; }
+
+.containerIconsAttributes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.containerIconsAttributes img {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 15px; }
+
+.containerIconsAttributes h3 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 54px; }
+
+.containerIconsAttributes p {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px; }
+
+.line-iconsAttributes {
+  height: 170px;
+  width: 1px;
+  background: #426000; }
+
 .backgroundImg-welcome {
   background-position: left;
   background-repeat: no-repeat;

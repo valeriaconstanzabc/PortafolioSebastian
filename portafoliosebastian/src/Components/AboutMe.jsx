@@ -1,4 +1,9 @@
 import React from 'react'
+import cafe from '../Imgs/cafe.png'
+import futbol from '../Imgs/futbol.png'
+import musica from '../Imgs/musica.png'
+import pasos from '../Imgs/pasos.png'
+import cerebro from '../Imgs/cerebro.png'
 
 const AboutMe = () => {
     return (
@@ -12,40 +17,40 @@ const AboutMe = () => {
 
                 <div className="aboutMe-iconsAttributes-container">
                     <div className="containerIconsAttributes">
-                        <img src="" alt="Café"/>
-                        <h4>3</h4>
+                        <img src={cafe} alt="Café"/>
+                        <h3>3</h3>
                         <p>CAFÉS AL DÍA</p>
                     </div>
 
                     <div className="line-iconsAttributes"></div>
 
                     <div className="containerIconsAttributes">
-                        <img src="" alt="Fútbol"/>
-                        <h4>375</h4>
+                        <img src={futbol} alt="Fútbol"/>
+                        <h3>375</h3>
                         <p>PARTIDOS JUGADO</p>
                     </div>
 
                     <div className="line-iconsAttributes"></div>
 
                     <div className="containerIconsAttributes">
-                        <img src="" alt="Música"/>
-                        <h4>57</h4>
+                        <img src={musica} alt="Música"/>
+                        <h3>57</h3>
                         <p>LISTAS REPRODUCIDAS</p>
                     </div>
 
                     <div className="line-iconsAttributes"></div>
 
                     <div className="containerIconsAttributes">
-                        <img src="" alt="Pasos"/>
-                        <h4>8.033</h4>
+                        <img src={pasos} alt="Pasos"/>
+                        <h3>8.033</h3>
                         <p>PASOS DIARIOS</p>
                     </div>
 
                     <div className="line-iconsAttributes"></div>
 
                     <div className="containerIconsAttributes">
-                        <img src="" alt="Cerébro"/>
-                        <h4>337</h4>
+                        <img src={cerebro} alt="Cerébro"/>
+                        <h3>337</h3>
                         <p>NUEVOS APRENDIZAJES</p>
                     </div>
                 </div>

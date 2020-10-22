@@ -5,6 +5,7 @@ import Dropdown from './Dropdown'
 const NavBar = () => {
     const [click, setClick] = useState(false)
     const [dropdown, setDropdown] = useState(false)
+    const [navBar, setNavBar] = useState(false)
 
     const handleClick = () => {
         setClick(!click)
@@ -29,8 +30,17 @@ const NavBar = () => {
         }
     };
 
+    const changeColorNavBar = () => {
+        if(window.scrollY >= 90) {
+            setNavBar(true)
+        } else {
+            setNavBar(false)
+        }
+    };
+    window.addEventListener('scroll', changeColorNavBar)
+
     return (
-        <nav className="container-navBar">
+        <nav className={navBar ? 'navbar active' : 'navBar'}>
 
             <div className='menu-icon' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>

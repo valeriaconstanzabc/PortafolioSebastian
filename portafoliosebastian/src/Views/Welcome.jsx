@@ -21,6 +21,7 @@ const Welcome = () => {
                     </p>
                 </div>
             </div>
+            <AboutMe />
         </>
     )
 }

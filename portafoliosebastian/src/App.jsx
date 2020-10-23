@@ -5,6 +5,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import AboutMe from "./Components/AboutMe";
 import NavBar from "./Components/NavBar/NavBar";
 
 // <--------------------IMPORT VIEWS-------------------->
@@ -18,6 +19,10 @@ function App() {
 
           <Route path="/" exact>
             <Welcome />
+          </Route>
+
+          <Route path="/sobremi" exact>
+            <AboutMe />
           </Route>
 
         </Switch>

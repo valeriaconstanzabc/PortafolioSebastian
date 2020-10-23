@@ -6,7 +6,7 @@ export const MenuItem = [
     },
     {
         title: 'ESPAÑOL',
-        path: '/espanol',
+        path: '/',
         cName: 'dropdown-link'
     }
 ]

@@ -8,7 +8,7 @@ import cerebro from '../Imgs/cerebro.png'
 const AboutMe = () => {
     return (
         <>
-            <div className="aboutMe-container">
+            <div id='sobremi' className="aboutMe-container">
                 <div className="line"></div>
                 <div className="aboutMe-tittle-container">
                     <h1>SOBRE MI</h1>

@@ -40,36 +40,38 @@ const NavBar = () => {
     window.addEventListener('scroll', changeColorNavBar)
 
     return (
-        <nav className={navBar ? 'navbar active' : 'navBar'}>
+        <>
+            <nav className={navBar ? 'navbar active' : 'navBar'}>
 
-            <div className='menu-icon' onClick={handleClick}>
-                <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
-            </div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                <li className="nav-item">
-                    <Link to='/' className="nav-links" onClick={closeMobileMenu}>SOBREMI</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to='/' className="nav-links" onClick={closeMobileMenu}>PROYECTOS</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to='/' className="nav-links" onClick={closeMobileMenu}>APRENDIZAJES</Link>
-                </li>
+                <div className='menu-icon' onClick={handleClick}>
+                    <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
+                </div>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <li className="nav-item">
+                        <Link to='/sobremi' className="nav-links" onClick={closeMobileMenu}>SOBREMI</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to='/' className="nav-links" onClick={closeMobileMenu}>PROYECTOS</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to='/' className="nav-links" onClick={closeMobileMenu}>APRENDIZAJES</Link>
+                    </li>
 
-                <li
-                    className='nav-item'
-                    onMouseEnter={onMouseEnter}
-                    onMouseLeave={onMouseLeave}
-                >
-                    <Link to='/' className="nav-links" onClick={closeMobileMenu}>
-                        IDIOMA
-                        <i className='fas fa-caret-down'></i>
-                    </Link>
-                    {dropdown && <Dropdown />}
-                </li>
-            </ul>
-        </nav>
-    )
+                    <li
+                        className='nav-item'
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                    >
+                        <Link to='/' className="nav-links" onClick={closeMobileMenu}>
+                            IDIOMA
+                            <i className='fas fa-caret-down'></i>
+                        </Link>
+                        {dropdown && <Dropdown />}
+                    </li>
+                </ul>
+            </nav>
+        </>
+    )   
 }
 
 export default NavBar

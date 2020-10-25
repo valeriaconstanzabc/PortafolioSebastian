@@ -180,18 +180,27 @@
 
 .aboutMe-iconsAttributes-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 60px; }
 
 .containerIconsAttributes {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  width: 180px;
+  margin-top: 20px; }
 
 .containerIconsAttributes img {
   height: 80px;
   width: 80px;
-  margin-bottom: 13px; }
+  margin-bottom: 13px;
+  transition: transform .3s; }
+
+.containerIconsAttributes img:hover {
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3); }
 
 .containerIconsAttributes h3 {
   font-weight: bold;
@@ -201,12 +210,15 @@
 .containerIconsAttributes p {
   font-weight: bold;
   font-size: 13px;
-  line-height: 22px; }
+  line-height: 22px;
+  margin: 0px 8px 0px 8px;
+  text-align: center; }
 
 .line-iconsAttributes {
   height: 170px;
   width: 1px;
-  background: #426000; }
+  background: #426000;
+  margin-top: 20px; }
 
 .aboutMe-attributes-container {
   width: 100%;
@@ -251,12 +263,37 @@
   line-height: 45px; }
 
 /* <---------------------MEDIA QUERY---------------------> */
+@media screen and (max-width: 950px) {
+  .aboutMe-attributes-container {
+    flex-direction: column; }
+  .line-attributes {
+    height: 0; }
+  .attributes-me, .attributes-skills {
+    width: 100%; }
+  .attributes-skills h3 {
+    justify-content: flex-start;
+    margin-top: 10px; } }
+
 @media screen and (max-width: 830px) {
   .aboutMe-container {
     display: flex;
     flex-direction: column;
     margin: 1px 90px 80px 90px;
     box-sizing: border-box; } }
+
+@media screen and (max-width: 722px) {
+  .containerIconsAttributes {
+    width: 140px; }
+  .line-iconsAttributes {
+    height: 200px; } }
+
+@media screen and (max-width: 603px) {
+  .containerIconsAttributes {
+    width: 110px; } }
+
+@media screen and (max-width: 512px) {
+  .aboutMe-container {
+    margin: 1px 45px 80px 45px; } }
 
 .containerName-welcome {
   display: flex;
@@ -311,6 +348,10 @@
   .description-Welcome {
     width: 100%; } }
 
+@media screen and (max-width: 512px) {
+  .containerName-welcome {
+    margin: 150px 45px 0px 45px; } }
+
 @media all and (max-width: 470px) {
   .nameAndLastname h1 {
     font-size: 125px;
@@ -349,3 +390,6 @@ code {
   width: 100%;
   height: 700px;
   max-height: 700px; }
+
+#root {
+  min-width: 440px; }

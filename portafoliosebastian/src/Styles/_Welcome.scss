@@ -51,13 +51,12 @@
         display: flex;
         align-items: center;
     }
-    .nameAndLastname h3{
-        font-size: 16vw;
-    }
-    .nameAndLastname h1{
-        font-size: 30vw;
-    }
+    .nameAndLastname h3{ font-size: 16vw; }
+    .nameAndLastname h1{ font-size: 30vw; }
     .description-Welcome{ width: 100%; }
+}
+@media screen and (max-width: 512px) {
+    .containerName-welcome{  margin: 150px 45px 0px 45px;  }
 }
 @media all and (max-width: 470px){
     .nameAndLastname h1{
@@ -70,8 +69,6 @@
     }
 }
 @media all and (max-width: 400px){
-    .nameAndLastname h1{
-        font-size: 95px;
-    }
+    .nameAndLastname h1{ font-size: 95px; }
     .nameAndLastname h3{ font-size: 50px; }
 }

@@ -101,7 +101,7 @@
             }
 
         .line-attributes{
-            height: 400px;
+            height: 370px;
             width: 1px;
             background: #426000;
             margin: 0px 20px 0px 20px;
@@ -110,6 +110,7 @@
         .attributes-skills{
             display: flex;
             flex-direction: column;
+            align-items: flex-end;
             width: 50%;
         }
             .attributes-skills h3{
@@ -121,6 +122,58 @@
                 font-size: 23px;
                 line-height: 45px;
             }
+        .attributesSkills{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 10px 0px 10px;
+            box-sizing: border-box;
+        }
+        .percentage{
+            font-size: 13px;
+            color: #171F07;
+        }
+        .softSkill{
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 6.33143px;
+            color: #171F07;
+        }
+        .colorOne{
+            display: flex;
+            width: 80%;
+            height: 30px;
+            background: #AADD52;
+            margin-bottom: 20px;
+        }
+        .colorTwo{
+            display: flex;
+            width: 70%;
+            height: 30px;
+            background: #AADD52;
+            margin-bottom: 20px;
+        }
+        .colorThre{
+            display: flex;
+            width: 100%;
+            height: 30px;
+            background: #AADD52;
+            margin-bottom: 20px;
+        }
+        .colorFour{
+            display: flex;
+            width: 50%;
+            height: 30px;
+            background: #AADD52;
+            margin-bottom: 20px;
+        }
+        .colorFive{
+            display: flex;
+            width: 90%;
+            height: 30px;
+            background: #AADD52;
+            margin-bottom: 20px;
+        }
 
 /* <---------------------MEDIA QUERY---------------------> */
 @media screen and (max-width: 950px) {

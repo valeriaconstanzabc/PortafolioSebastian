@@ -75,14 +75,27 @@ const AboutMe = () => {
                     <div className="line-attributes"></div>
 
                     <div className="attributes-skills">
-                        <h3>MIS HABILIDADES</h3>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <h3>HABILIDADES BLANDAS</h3>
+                        <div className="attributesSkills colorOne">
+                            <h4 className="percentage">80%</h4>
+                            <h4 className="softSkill">COMPAÑERISMO</h4>
+                        </div>
+                        <div className="attributesSkills colorTwo">
+                            <h4 className="percentage">70%</h4>
+                            <h4 className="softSkill">COMPROMISO</h4>
+                        </div>
+                        <div className="attributesSkills colorThre">
+                            <h4 className="percentage">100%</h4>
+                            <h4 className="softSkill">PROACTIVIDAD</h4>
+                        </div>
+                        <div className="attributesSkills colorFour">
+                            <h4 className="percentage">50%</h4>
+                            <h4 className="softSkill">PUNTUALIDAD</h4>
+                        </div>
+                        <div className="attributesSkills colorFive">
+                            <h4 className="percentage">90%</h4>
+                            <h4 className="softSkill">PROFESIONALIDAD</h4>
+                        </div>
                     </div>
                 </div>
             </div>

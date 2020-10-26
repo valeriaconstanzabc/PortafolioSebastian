@@ -1,7 +1,7 @@
 .aboutMe-container{
     display: flex;
     flex-direction: column;
-    margin: 1px 120px 80px 120px;
+    margin: 1px 120px 120px 120px;
     box-sizing: border-box;
 }
     .line{
@@ -15,7 +15,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
     }
         .aboutMe-tittle-container h1{
             display: flex;
@@ -33,7 +33,7 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin-bottom: 60px;
+        margin-bottom: 100px;
         // min-width: 520px;
     }
         .containerIconsAttributes{
@@ -138,6 +138,10 @@
             font-size: 13px;
             letter-spacing: 6.33143px;
             color: #171F07;
+            margin-left: 15px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         .colorOne{
             display: flex;
@@ -178,7 +182,7 @@
 /* <---------------------MEDIA QUERY---------------------> */
 @media screen and (max-width: 950px) {
     .aboutMe-attributes-container{ flex-direction: column; }
-    .line-attributes{ height: 0; }
+    .line-attributes{ height: 1px; width: 100%; margin: 30px 0px 20px 0px; }
     .attributes-me, .attributes-skills{ width: 100%; }
     .attributes-skills h3{ justify-content: flex-start; margin-top: 10px; }
 }

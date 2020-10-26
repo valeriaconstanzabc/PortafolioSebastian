@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutMe from '../Components/AboutMe'
+import Proyects from '../Components/Proyects'
 // import NavBar from '../componets/NavBar'
 
 const Welcome = () => {
@@ -22,6 +23,7 @@ const Welcome = () => {
                 </div>
             </div>
             <AboutMe />
+            <Proyects />
         </>
     )
 }
